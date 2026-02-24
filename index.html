@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOYO | 香氛·空間</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- ============================================================
+       TOP ANNOUNCEMENT BAR
+  ============================================================ -->
+    <div class="topbar">
+        <div class="container">
+            <span class="topbar-left">SOYO FRAGRANCE</span>
+            <nav class="topbar-nav">
+                <a href="#">關於平臺</a>
+                <a href="#">關於下單</a>
+                <a href="#">積木小電商連接點</a>
+            </nav>
+            <span class="topbar-right">&#8250;</span>
+        </div>
+    </div>
+
+    <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">SOYO<span class="dot"> | </span>香氛<span class="dot">·</span>空間</a>
+            <ul class="nav-links">
+                <li><a href="#">商品介紹</a></li>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">品牌專欄</a></li>
+            </ul>
+            <div class="nav-actions">
+                <!-- Search -->
+                <button aria-label="搜尋">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+                <!-- Account -->
+                <button aria-label="帳號">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </button>
+                <!-- Cart -->
+                <button aria-label="購物車">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg>
+                </button>
+                <!-- Hamburger (mobile only) -->
+                <button class="nav-hamburger" aria-label="選單" id="hamburgerBtn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-overlay" id="navOverlay"></div>
+        <div class="mobile-nav-drawer">
+            <button class="mobile-nav-close" id="navClose">✕</button>
+            <nav class="mobile-nav-links">
+                <a href="#">商品介紹</a>
+                <a href="#">關於我們</a>
+                <a href="#">品牌專欄</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+    <section class="hero">
+        <div class="hero-grid">
+            <!-- Left: Copy -->
+            <div class="hero-left">
+                <div class="hero-deco-line"></div>
+                <div class="hero-deco-vert">SOYO FRAGRANCE SPACE</div>
+                <span class="section-label hero-label">CREATE RITUAL MOMENTS</span>
+                <div class="hero-heading">
+                    <h1>呼吸之間</h1>
+                    <span class="subtitle">喚醒內在的寧靜</span>
+                </div>
+                <p class="hero-body">
+                    在忙碌的城市中，給自己劃出一畫光，<br />
+                    感受香氛流淌，找回內心的平靜與圓滿。
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-outline">關於以藤</button>
+                    <button class="btn btn-gold-filled">
+                        立即登記
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Right: Hero Image -->
+            <div class="hero-right">
+                <div class="hero-img-frame">
+                    <div class="hero-img-arch">
+                        <img src="https://picsum.photos/seed/soyo_diffuser/500/700" alt="SOYO 香氛擴香瓶"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>SOYO FRAGRANCE</div>'" />
+                    </div>
+                    <div class="hero-deco-dot"></div>
+                    <div class="hero-deco-circle c1"></div>
+                    <div class="hero-deco-circle c2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Arrows -->
+        <div class="hero-carousel">
+            <button class="carousel-btn" aria-label="上一張">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+            <button class="carousel-btn active" aria-label="下一張">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       STORY SECTION 1 — BRAND STORY
+  ============================================================ -->
+    <section class="story">
+        <div class="container">
+            <div class="story-grid">
+                <!-- Image Left -->
+                <div class="story-img">
+                    <img src="https://picsum.photos/seed/soyo_woman/700/900" alt="SOYO 品牌故事"
+                        onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>BRAND STORY</div>'" />
+                </div>
+                <!-- Content Right -->
+                <div class="story-content">
+                    <span class="section-label">BRAND STORY</span>
+                    <h2>在蠟燭的光裡，<br />時間會慢一點</h2>
+                    <p>
+                        在蠟燭的光裡，時間會慢一點。<br />
+                        SOYO 以台灣草本氣味帶進家人們，<br />
+                        讓每一次燃燒都能停留下「靜謐感」。
+                    </p>
+                    <p>
+                        不論是疲憊後、閉眼時的那麼一刻的享受，還是日日已相遇的一段，<br />
+                        一剪燭焰，能讓體家回復到那裡那枚小儀式。
+                    </p>
+                    <a href="#" class="story-link">
+                        SOYO 之美
+                        <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       STORY SECTION 2 — CRAFTSMANSHIP
+  ============================================================ -->
+    <section class="story reverse">
+        <div class="container">
+            <div class="story-grid">
+                <!-- Image Right (reversed by CSS) -->
+                <div class="story-img">
+                    <img src="https://picsum.photos/seed/soyo_candle/700/900" alt="SOYO 工藝蠟燭"
+                        onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>CRAFTSMANSHIP</div>'" />
+                </div>
+                <!-- Content Left -->
+                <div class="story-content">
+                    <span class="section-label">CRAFTSMANSHIP</span>
+                    <h2>讓香氛成為<br />日常的靜謐儀式</h2>
+                    <p>
+                        這去看要體特複雜與連續性的習慣！<br />
+                        香氛情境找連結依靠心情下來的方式。
+                    </p>
+                    <p>
+                        SOYO 新草本・木質與精油注意調制庭香的節奏，<br />
+                        讓家在自然節節節燃燒，體驗沉浸，<br />
+                        為你更加感情台地您適合感。
+                    </p>
+                    <a href="#" class="story-link">
+                        探索更多
+                        <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       FEATURED PRODUCTS
+  ============================================================ -->
+    <section class="products">
+        <div class="container">
+            <div class="section-heading">
+                <h2>精選香氛</h2>
+            </div>
+            <div class="products-grid">
+
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/soyo_p1/400/600" alt="香氛禮盒組"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>PRODUCT</div>'" />
+                        <button class="product-fav" aria-label="加入收藏">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-name">香氛禮盒組</p>
+                    <p class="product-price">NT$ 1,260</p>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/soyo_p2/400/600" alt="森鮮光影｜雪松 × 冷杉"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>PRODUCT</div>'" />
+                        <button class="product-fav" aria-label="加入收藏">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-name">森鮮光影｜雪松 × 冷杉</p>
+                    <p class="product-price">NT$ 520</p>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/soyo_p3/400/600" alt="海岸隙間｜海鹽 × 延尾草"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>PRODUCT</div>'" />
+                        <button class="product-fav" aria-label="加入收藏">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-name">海岸隙間｜海鹽 × 延尾草</p>
+                    <p class="product-price">NT$ 520</p>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/soyo_p4/400/600" alt="晴日信光｜橘子樹 × 白茶"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>PRODUCT</div>'" />
+                        <button class="product-fav" aria-label="加入收藏">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-name">晴日信光｜橘子樹 × 白茶</p>
+                    <p class="product-price">NT$ 660</p>
+                </div>
+
+            </div>
+            <div class="products-cta">
+                <button class="btn btn-gold-outline">更多產品</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       BLOG / ARTICLES
+  ============================================================ -->
+    <section class="blog">
+        <div class="container">
+            <div class="blog-header">
+                <h2>
+                    為生活點燃一抹<br />
+                    帶著光影的靈魂香氣
+                </h2>
+            </div>
+            <div class="blog-grid">
+
+                <!-- Article 1 -->
+                <div class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="https://picsum.photos/seed/soyo_b1/500/400" alt="文章封面"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>ARTICLE</div>'" />
+                    </div>
+                    <p class="blog-date">2023.12.27</p>
+                    <p class="blog-title">「芒果乾」的告白記：三個月後，我的生活改變了</p>
+                    <p class="blog-excerpt">使用了三個月後，我終於理解 SOYO 想表達的靜謐生活態度，不僅僅是氣味，更是一種選擇。</p>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="https://picsum.photos/seed/soyo_b2/500/400" alt="文章封面"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>ARTICLE</div>'" />
+                    </div>
+                    <p class="blog-date">2023.11.30</p>
+                    <p class="blog-title">為什麼你的蠟燭應該有個故事？聞香的儀式感</p>
+                    <p class="blog-excerpt">不只是香味，每一次點燃都是一場對話，與自己、與空間，與那個疲憊的自己好好說聲晚安。</p>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="https://picsum.photos/seed/soyo_b3/500/400" alt="文章封面"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>ARTICLE</div>'" />
+                    </div>
+                    <p class="blog-date">2023.10.21</p>
+                    <p class="blog-title">「撫慰心靈」的設計哲學：香氛如何影響情緒</p>
+                    <p class="blog-excerpt">氣味是最直接觸及情感記憶的感官，讓我們來談談香氛設計背後的心理學與美學。</p>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="https://picsum.photos/seed/soyo_b4/500/400" alt="文章封面"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>ARTICLE</div>'" />
+                    </div>
+                    <p class="blog-date">2023.09.23</p>
+                    <p class="blog-title">讓家成為最好的人，心靈棲居之所的打造方式</p>
+                    <p class="blog-excerpt">家不只是住所，更是靈魂充電的地方，從一根蠟燭開始，打造屬於你的靜謐角落。</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       COMMUNITY
+  ============================================================ -->
+    <section class="community">
+        <div class="container">
+            <div class="community-header">
+                <h2>尋味者，<br />靈魂棲息的靜謐角落</h2>
+            </div>
+            <div class="community-grid">
+
+                <!-- Member 1 -->
+                <div class="comm-card">
+                    <div class="comm-avatar">
+                        <img src="https://picsum.photos/seed/soyo_c1/200/200" alt="Chloe Fung"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>C</div>'" />
+                    </div>
+                    <div>
+                        <p class="comm-name">Chloe Fung</p>
+                        <p class="comm-role">SOYO 品牌創辦者</p>
+                    </div>
+                    <p class="comm-desc">
+                        相信每個人都值得一個屬於自己的儀式感角落，
+                        以氣味為媒介，讓生活更有溫度。
+                    </p>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="comm-card">
+                    <div class="comm-avatar">
+                        <img src="https://picsum.photos/seed/soyo_c2/200/200" alt="石頭"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>S</div>'" />
+                    </div>
+                    <div>
+                        <p class="comm-name">石頭</p>
+                        <p class="comm-role">香氛美品品鑑師</p>
+                    </div>
+                    <p class="comm-desc">
+                        從事香氛評鑑多年，深信好的氣味能改變一天的節奏，
+                        讓生活的每個瞬間都值得被細細品味。
+                    </p>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="comm-card">
+                    <div class="comm-avatar">
+                        <img src="https://picsum.photos/seed/soyo_c3/200/200" alt="空間感旅人"
+                            onerror="this.parentElement.innerHTML='<div class=\'img-ph\'>T</div>'" />
+                    </div>
+                    <div>
+                        <p class="comm-name">空間感旅人</p>
+                        <p class="comm-role">空間感式旅行</p>
+                    </div>
+                    <p class="comm-desc">
+                        走遍各地尋找能讓靈魂喘息的空間，
+                        與 SOYO 一同在旅途中點燃靜謐，找回對生活的感知。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <p class="footer-brand-logo">SOYO<span class="dot"> | </span>香氛<span class="dot">·</span>空間</p>
+                    <p class="footer-tagline">
+                        「靜謐·儀式·光影·空間」<br />
+                        讓香氛成為你最日常的小儀式，<br />
+                        點燃當下，感受當下。
+                    </p>
+                    <p class="footer-phone">0x-XXXX-XXXX</p>
+                </div>
+
+                <!-- Shop Links -->
+                <div class="footer-col">
+                    <p class="footer-col-title">SHOP</p>
+                    <ul>
+                        <li><a href="#">所有商品</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Links -->
+                <div class="footer-col">
+                    <p class="footer-col-title">ABOUT</p>
+                    <ul>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">品牌專欄</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col">
+                    <p class="footer-col-title">CONTACT</p>
+                    <p class="footer-email">service@soyo.com.tw</p>
+                    <p class="footer-address">
+                        最長不超過兩行收據地址<br />
+                        如需更多協助請透過 Line 聯絡
+                    </p>
+                    <div class="footer-socials">
+                        <!-- Facebook -->
+                        <button class="social-btn" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </button>
+                        <!-- Instagram -->
+                        <button class="social-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </button>
+                        <!-- YouTube -->
+                        <button class="social-btn" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="footer-bottom">© Copyright 2024 SOYO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
